@@ -1,0 +1,11 @@
+.cz-notice {
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+}
+
+.cz-notice h4 {
+    display: inline-block;
+}
+

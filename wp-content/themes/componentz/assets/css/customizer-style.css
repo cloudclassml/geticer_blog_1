@@ -1,0 +1,292 @@
+/**
+ * Customizer panel design
+
+Table of Contents:
+
+- Root Definition
+- Heading Icons
+- Form Fields
+    -- Default Style
+    -- Range
+- Premium Section
+
+    Root Definition
+    ======================================= */
+
+:root {
+    --color-hex-black: #191e27;
+    --color-hex-blue: #0d55ff;
+    --color-hex-white: #fff;
+    --color-rgba-black: rgba(0, 0, 0, .1);
+}
+
+.customize-control-kirki-custom label {
+    cursor: unset;
+}
+
+.cz-info-label {
+    background: var(--color-hex-white);
+    border-radius: .25rem;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    color: var(--color-hex-black);
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: 1;
+    margin: 1rem 0;
+    padding: .8rem 1rem;
+}
+
+#customize-control-componentz_featured_section_background .background-color,
+#customize-control-componentz_featured_section_background .background-image h4,
+#customize-control-componentz_footer_background .background-color,
+#customize-control-componentz_footer_background .background-image h4 {
+    display: none;
+}
+
+/*
+    Heading Icons
+    ======================================= */
+
+.customize-section-title h3::after,
+#customize-info .preview-notice > .panel-title::before,
+.customize-info .preview-notice > .panel-title::before,
+ul.customize-pane-parent > li.control-section > h3::before {
+    background: url(../img/icons/admin.svg#cz-icon-default-view) no-repeat center center;
+    background-size: 16px 16px;
+    content: '';
+    display: inline-block;
+    -webkit-filter: invert(25%) sepia(56%) saturate(6262%) hue-rotate(223deg) brightness(99%) contrast(104%);
+    filter: invert(25%) sepia(56%) saturate(6262%) hue-rotate(223deg) brightness(99%) contrast(104%);
+    height: 1rem;
+    margin-right: .5rem;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 1rem;
+}
+
+.rtl .customize-section-title h3::after,
+.rtl #customize-info .preview-notice > .panel-title::before,
+.rtl .customize-info .preview-notice > .panel-title::before,
+.rtl ul.customize-pane-parent > li.control-section > h3::before {
+    margin-left: .5rem;
+    margin-right: unset;
+}
+
+.customize-section-title h3::after,
+#customize-info .preview-notice > .panel-title::before,
+.customize-info .preview-notice > .panel-title::before {
+    background: url(../img/icons/admin.svg#cz-icon-componentz-logo-view) no-repeat center center;
+    background-size: 18px 18px;
+    height: 18px;
+    width: 18px;
+}
+
+.customize-section-title h3::after {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    top: 5px;
+}
+
+.rtl .customize-section-title h3::after {
+    float: right;
+}
+
+ul.customize-pane-parent > li.control-section:hover > h3::before,
+#customize-outer-theme-controls .accordion-section-title:hover::after,
+#customize-theme-controls .accordion-section-title:hover::after {
+    -webkit-filter: invert(13%) sepia(12%) saturate(3877%) hue-rotate(199deg) brightness(100%) contrast(97%);
+    filter: invert(13%) sepia(12%) saturate(3877%) hue-rotate(199deg) brightness(100%) contrast(97%);
+}
+
+#accordion-section-componentz_theme_layout_section > h3::before {
+    background-image: url(../img/icons/admin.svg#cz-icon-layout-view);
+}
+
+#accordion-section-header_image > h3::before {
+    background-image: url(../img/icons/admin.svg#cz-icon-header-view);
+}
+
+#accordion-section-componentz_footer_section > h3::before {
+    background-image: url(../img/icons/admin.svg#cz-icon-footer-view);
+}
+
+#accordion-section-componentz_logo_title_section > h3::before {
+    background-image: url(../img/icons/admin.svg#cz-icon-logo-view);
+}
+
+#accordion-section-componentz_menu_section > h3::before {
+    background-image: url(../img/icons/admin.svg#cz-icon-menu-view);
+}
+
+#accordion-section-componentz_sticky_header_section > h3::before {
+    background-image: url(../img/icons/admin.svg#cz-icon-sticky-header-view);
+}
+
+#accordion-panel-componentz_typography_panel > h3::before {
+    background-image: url(../img/icons/admin.svg#cz-icon-typography-view);
+}
+
+#accordion-panel-componentz_colors_panel > h3::before {
+    background-image: url(../img/icons/admin.svg#cz-icon-colors-view);
+}
+
+#accordion-section-componentz_blog_section > h3::before {
+    background-image: url(../img/icons/admin.svg#cz-icon-blog-view);
+}
+
+#accordion-section-componentz_social_section > h3::before {
+    background-image: url(../img/icons/admin.svg#cz-icon-social-view);
+}
+
+#accordion-section-componentz_buttons_section > h3::before {
+    background-image: url(../img/icons/admin.svg#cz-icon-button-view);
+}
+
+#accordion-section-title_tagline > h3::before {
+    background-image: url(../img/icons/admin.svg#cz-icon-identity-view);
+}
+
+#accordion-panel-nav_menus > h3::before {
+    background-image: url(../img/icons/admin.svg#cz-icon-menus-view);
+}
+
+#accordion-panel-widgets > h3::before {
+    background-image: url(../img/icons/admin.svg#cz-icon-widgets-view);
+}
+
+#accordion-section-static_front_page > h3::before {
+    background-image: url(../img/icons/admin.svg#cz-icon-front-page-view);
+}
+
+#accordion-panel-woocommerce > h3::before {
+    background-image: url(../img/icons/admin.svg#cz-icon-woocommerce-view);
+}
+
+#accordion-section-custom_css > h3::before {
+    background-image: url(../img/icons/admin.svg#cz-icon-custom-css-view);
+}
+
+#accordion-panel-componentz_features_panel > h3::before {
+    background-image: url(../img/icons/admin.svg#cz-icon-features-view);
+}
+
+/*
+    Form Fields
+    ======================================= */
+
+/*
+    -- Default Style
+    --------------------------------------- */
+
+.customize-control-kirki-radio-image input + label img,
+.customize-control-kirki-radio-image input:checked + label img {
+    border: 4px solid transparent;
+    margin: 0 .25rem;
+    padding: .125rem;
+}
+
+.customize-control-kirki-radio-image input:checked + label img {
+    border-color: var(--color-hex-blue);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#input_componentz_content_layout img,
+#input_componentz_footer_widgets_layout img {
+    max-width: 40px;
+}
+
+/*
+    -- Range
+    --------------------------------------- */
+
+.rtl .customize-control-kirki-slider .wrapper input[type=text] {
+    text-align: left;
+}
+
+.rtl .customize-control-kirki-slider .wrapper .slider-reset {
+    left: 0;
+    right: unset;
+}
+
+.customize-control-kirki-slider .wrapper .slider-reset:hover {
+    color: var(--color-hex-blue);
+}
+
+.customize-control-kirki-slider .wrapper input[type="range"]::-webkit-slider-thumb {
+    background-color: var(--color-hex-blue);
+}
+
+.customize-control-kirki-slider .wrapper input[type="range"]::-webkit-slider-thumb:hover {
+    background-color: var(--color-hex-blue);
+}
+
+/*
+    Premium Section
+    ======================================= */
+
+#customize-theme-controls .control-section-componentz-premium .accordion-section-title::before {
+    display: none;
+}
+
+#customize-theme-controls .control-section-componentz-premium .accordion-section-title,
+#customize-theme-controls .control-section-componentz-premium .accordion-section-title:hover {
+    overflow: hidden;
+}
+
+#customize-theme-controls .control-section-componentz-premium .accordion-section-title .button,
+.componentz-upsell a {
+    background: var(--color-hex-blue);
+    border: none;
+    border-radius: .25rem;
+    -webkit-box-shadow: 0 1px 2px var(--color-rgba-black);
+    box-shadow: 0 1px 2px var(--color-rgba-black);
+    color: #fff;
+    font-size: .7rem;
+    line-height: 1.5;
+    min-height: 25px;
+    padding: .3rem 1rem;
+    text-transform: uppercase;
+    -o-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+#customize-theme-controls .control-section-componentz-premium .accordion-section-title .button:hover,
+.componentz-upsell a:hover {
+    background: var(--color-hex-black);
+}
+
+.componentz-upsell {
+    background: var(--color-hex-white);
+    border-radius: .4em;
+    cursor: default;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.componentz-upsell li {
+    cursor: default;
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.componentz-upsell .componentz-upsell-label {
+    font-size: .875rem;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.componentz-upsell a {
+    background: var(--color-hex-blue);
+    font-size: .7rem;
+    font-weight: 600;
+    line-height: 2.2;
+    padding: 0 1rem;
+    text-decoration: none;
+}

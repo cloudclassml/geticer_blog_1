@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 608 656" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+    <metadata>
+        <rdf:RDF>
+            <cc:Work rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                <dc:title/>
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <defs>
+        <linearGradient id="a">
+            <stop stop-color="#1120aa" offset="0"/>
+            <stop stop-color="#1c32fc" offset="1"/>
+        </linearGradient>
+        <linearGradient id="b" x1="262.29" x2="509.75" y1="528.46" y2="457.69" gradientUnits="userSpaceOnUse"
+                        xlink:href="#a"/>
+        <linearGradient id="c" x1="101.69" x2="271.61" y1="328.46" y2="112.36"
+                        gradientTransform="translate(-3e-6,-4e-6)" gradientUnits="userSpaceOnUse" xlink:href="#a"/>
+    </defs>
+    <path d="m285.76 85.958 0.30047 275.52-238.48 139.03v-277.27z" fill="url(#c)" fill-rule="evenodd"/>
+    <g fill-rule="evenodd">
+        <path d="m523.94 223.23 0.30047 275.52-238.48 138.25 0.01946-275.38z" fill="url(#b)"/>
+        <path d="m47.575 223.23v277.27l238.18 136.5 0.30049-275.53z" fill="#3549ff"/>
+    </g>
+    <path d="m320.59 18.223 0.16007 276.75 239.67-136.49z" fill="#1c32fc" fill-rule="evenodd"/>
+    <g fill-rule="evenodd">
+        <path d="m523.94 223.23 0.30047 275.52-238.48 138.25 0.01946-275.38z" fill="url(#b)"/>
+        <path d="m47.575 223.23v277.27l238.18 136.5 0.30049-275.53z" fill="#3549ff"/>
+    </g>
+</svg>
